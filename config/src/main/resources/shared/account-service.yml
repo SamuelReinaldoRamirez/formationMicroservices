@@ -1,0 +1,11 @@
+server:
+  port: 4444
+  
+feign:
+  client:
+    config:
+      default:
+       connect-timeout: 5000
+       read-timeout: 5000
+    hystrix:
+      enabled: true
